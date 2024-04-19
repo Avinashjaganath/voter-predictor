@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div style="height: 400px; width: 400px; ">
+        <h1>Age Validation Form</h1>
+        <input type="text" placeholder="Enter Name" id="name"><br><br>
+        <input type="text" placeholder="Enter Age" id="age"><br><br>
+        <p><input type="checkbox" id="ind" required>I'm a Indan Citizen</p>
+        <input type="submit" value="submit" onclick="cal()" id="button">
+        <h4 id="check">Checking.... </h4>
+    </div>
+    <script>
+        function cal(){
+            var na=document.getElementById("name").value;
+            var ag=parseInt(document.getElementById("age").value);
+            if(17<ag )
+                document.getElementById("check").textContent=na+"You can Vote. ";
+            else if(ag<120 && ag<17) 
+                document.getElementById("check").textContent=na+" is Not Eligble For Voting";
+        }
+    </script>
+</body>
+</html>

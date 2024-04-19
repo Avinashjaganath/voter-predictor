@@ -1,0 +1,29 @@
+div{
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-image: linear-gradient(to right bottom, rgb(219, 52, 10) ,white, green);
+    border-radius: 5%;
+
+}
+
+body{
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#name{
+    margin-top: 10%;
+}
+input{
+    margin-top: 5%;
+    background-color: color(display-p3 red green blue);
+}
+
+#button{
+    background-color: rgb(7, 23, 248);
+    width: 50%;
+    border-radius: 10%;
+}
